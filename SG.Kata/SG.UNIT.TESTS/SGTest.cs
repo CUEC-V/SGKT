@@ -23,7 +23,7 @@ namespace SG.UNIT.TESTS
         [SetUp]
         public void Setup()
         {
-            SGConfiguration.ConnectingString = "Server=[XXXX]\\SQLEXPRESS\\SQLEXPRESS;Database=SG;Integrated Security=True;";
+            SGConfiguration.ConnectingString = "Server=[XXXX]\\SQLEXPRESS;Database=SG;Integrated Security=True;";
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection);
             ServiceProvider = serviceCollection.BuildServiceProvider();
